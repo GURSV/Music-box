@@ -1,0 +1,63 @@
+#audio-player {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.gif {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color: red;
+}
+
+.show {
+    z-index: 2;
+}
+
+.container {
+    height: inherit;
+    position: relative;
+}
+
+.first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.second {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer {
+    background-color: purple;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+}
+
+.pause {
+    background-image: url(images/pause.png);
+    background-size: cover;
+}
+
+.play {
+    background-image: url(images/play.png);
+    background-size: cover;
+}

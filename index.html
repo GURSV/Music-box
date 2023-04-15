@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CS193X Music Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./musicbox-style.css" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+    <script src="./lib/dancer.min.js"></script>
+    <script src="./lib/fetch.js"></script>
+    <script src="./audio-player.js" defer></script>
+
+    <!-- TODO(you): Add any additional scripts here! -->
+    <script src="./menu-screen.js" defer></script>
+    <script src="./play-button.js" defer></script>
+    <script src="./gif-display.js" defer></script>
+    <script src="./music-screen.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="menu">
+        <h1>Music Box</h1>
+        <fieldset>
+            <form>
+                <h2>1. Choose a song:</h2>
+                <select id="song-selector"></select>
+
+                <h2>2. Choose a theme:</h2>
+                <input type="text" id="query-input" placeholder="Enter a word or phrase" />
+                <div id="error" class="inactive">Not enough gifs for this theme. Please try another.</div>
+
+                <input type="submit" value="Go" />
+            </form>
+        </fieldset>
+    </div>
+    <div id="audio-player" class="inactive">
+        <div class="container">
+            <div class="gif first show"></div>
+            <div class="gif second"></div>
+        </div>
+        <footer class="footer">
+            <div class="button pause"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
